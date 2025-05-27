@@ -1,0 +1,11 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+cmd = "go build -o ./tmp/app.exe"
+bin = "tmp/app.exe"
+delay = 1000
+exclude_dir = ["tmp", "vendor"]
+
+[env]
+NO_BROWSER = "1"
